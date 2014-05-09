@@ -48,7 +48,11 @@ void Img::boundarize() {
 	delete [] vy;
 
 	std::cout << "\n[+] Initiallizing vectors : "<<points<<" points detected";
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> a2faf243070692899d28948e063d2c49d968289f
 	vx = new int[points+1];
 	std::cout << "\n[+] Vx initiallized";
 	vy = new int[points+1];
