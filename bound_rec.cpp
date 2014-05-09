@@ -2,7 +2,7 @@
 
 /*
 * This code is part of yabdt open source software.
-* Please see the README (or the header file) for more license details
+* Please see the LICENSE (or the header) file for more license details
 */
 
 Img::Img(const char *fn) {
@@ -48,8 +48,7 @@ void Img::boundarize() {
 	delete [] vy;
 
 	std::cout << "\n[+] Initiallizing vectors : "<<points<<" points detected";
-	//Alloca Vettori di X(Ascisse) e Y(Ordinate). 
-	//Al più possono contenere tutti i punti nonzeri individuati
+	
 	vx = new int[points+1];
 	std::cout << "\n[+] Vx initiallized";
 	vy = new int[points+1];
@@ -61,7 +60,7 @@ void Img::boundarize() {
 }
 
 void Img::sampling() {
-	//Questo algoritmo di campionamento fa davvero cagare
+	//Questo algoritmo di campionamento fa abbastanza schifo
 
 	int c = 0;
 	bool first = false;
@@ -204,10 +203,10 @@ void help() {
 	std::cout << "\nYABDT: Yet another boundary detection tool - Version 1.0.0 \n\n";
 	std::cout << "Yabdt processes images (tested on jpg and png but should work on other formats too) to \n";
 	std::cout << "exract external boundary points and prints their coordinates (xy space) according to \n";
-	std::cout << "Celentano's Robotic hand-to-write matlab script\n";
-	std::cout << "\nThis program uses opencv lib to perform the boundary detection\n";
+	std::cout << "Matlab vector syntax. \n";
+	std::cout << "\nThis program uses opencv libs to perform the boundary detection\n";
 	std::cout << "This program is an open source software realesed under MIT License\n";
-	std::cout << "See the README (or the header file) for further details about License";
+	std::cout << "See the LICENSE (or the header) file for further details about License";
 	std::cout << "\n\n\t Live long and prosper \t\n";
 	std::cout << "\n********************************************************************************************* \n";
 	exit(EXIT_SUCCESS);

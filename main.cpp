@@ -2,7 +2,7 @@
 
 /*
 * This code is part of yabdt open source software.
-* Please see the README (or the header file) for more license details
+* Please see the LICENSE (or the header) file for more license details
 */
 
 int main(int argc, char * argv[]) {
@@ -30,11 +30,11 @@ int main(int argc, char * argv[]) {
   	src.print_rev(0);
 	
 
-	namedWindow( "Display Image", CV_WINDOW_AUTOSIZE );
-	imshow( "Display Image", src.getImg() );
+	namedWindow( "YABDT ", CV_WINDOW_AUTOSIZE );
+	imshow( "YABDT", src.getImg() );
 	waitKey(0);
-	
-	std::cout <<" "<< " "<<src.getPoints()<<std::endl;
+
+	std::cout << std::endl;
 	std::cout<<src.getImg().size();
 	
 }
