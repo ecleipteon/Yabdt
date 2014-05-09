@@ -48,8 +48,7 @@ void Img::boundarize() {
 	delete [] vy;
 
 	std::cout << "\n[+] Initiallizing vectors : "<<points<<" points detected";
-	//Alloca Vettori di X(Ascisse) e Y(Ordinate). 
-	//Al più possono contenere tutti i punti nonzeri individuati
+
 	vx = new int[points+1];
 	std::cout << "\n[+] Vx initiallized";
 	vy = new int[points+1];
